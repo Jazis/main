@@ -7,17 +7,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   
   <script type="text/javascript">
-   // Update the 'nojs'/'js' class on the html node
+   // Redirect to phone/tablet as necessary
+(function(c,b,d){var a=function(){if(navigator.maxTouchPoints>1)return!0;if(window.matchMedia&&window.matchMedia("(-moz-touch-enabled)").matches)return!0;for(var a=["Webkit","Moz","O","ms","Khtml"],b=0,c=a.length;b<c;b++){var d=a[b]+"MaxTouchPoints";if(d in navigator&&navigator[d])return!0}try{return document.createEvent("TouchEvent"),!0}catch(f){}return!1}(),f=function(a){a+="=";for(var b=document.cookie.split(";"),c=0;c<b.length;c++){for(var d=b[c];d.charAt(0)==" ";)d=d.substring(1,d.length);if(d.indexOf(a)==
+0)return d.substring(a.length,d.length)}return null};if(f("inbrowserediting")!="true"){var h,f=f("devicelock");f=="phone"&&d?h=d:f=="tablet"&&b&&(h=b);if(f!=c&&!h)if(window.matchMedia)window.matchMedia("(max-device-width: 415px)").matches&&d?h=d:window.matchMedia("(max-device-width: 960px)").matches&&b&&a&&(h=b);else{var c=Math.min(screen.width,screen.height)/(window.devicePixelRatio||1),f=window.screen.systemXDPI||0,g=window.screen.systemYDPI||0,f=f>0&&g>0?Math.min(screen.width/f,screen.height/g):
+0;(c<=370||f!=0&&f<=3)&&d?h=d:c<=960&&b&&a&&(h=b)}if(h)b=document.location.search||"",d=document.location.hash||"",document.write('<style type="text/css">body {visibility:hidden}</style>'),document.location=h+b+d}})("desktop","","phone/index.html");
+
+// Update the 'nojs'/'js' class on the html node
 document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
 
 // Check that all required assets are uploaded and up-to-date
 if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.watch.js", "jquery.musepolyfill.bgsize.js", "require.js", "index.css"], "outOfDate":[]};
 </script>
   
+  <link media="only screen and (max-width: 370px)" rel="alternate" href="https://jazis.github.io/main/phone/index.html"/>
   <title>Домашняя</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=444006867"/>
-  <link rel="stylesheet" type="text/css" href="css/index.css?crc=436108822" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?crc=866174" id="pagesheet"/>
     <!--HTML Widget code-->
   
 
@@ -42,25 +48,23 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <div class="clearfix borderbox" id="page"><!-- group -->
    <div class="clearfix grpelem" id="ppu471"><!-- column -->
     <div class="clearfix colelem" id="pu471"><!-- group -->
-     <div class="grpelem" id="u471"><!-- simple frame -->
-      <div class="fluid_height_spacer"></div>
-     </div>
+     <div class="grpelem" id="u471"><!-- simple frame --></div>
      <!-- m_editable region-id="editable-static-tag-U371-BP_infinity" template="index.html" data-type="image" data-ice-options="clickable" data-ice-editable="link" -->
-     <a class="nonblock nontext anim_swing clip_frame grpelem" id="u371" href="index.html#skills" data-href="anchor:U82:U483" data-muse-uid="U371" data-muse-type="img_frame"><!-- image --><img class="block" id="u371_img" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20670x227.jpg?crc=480356320" alt="" data-muse-src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20670x227.jpg?crc=480356320" data-heightwidthratio="0.3357664233576642" data-image-width="137" data-image-height="46"/></a>
+     <a class="nonblock nontext anim_swing clip_frame grpelem" id="u371" href="index.html#skills" data-href="anchor:U82:U483" data-muse-uid="U371" data-muse-type="img_frame"><!-- image --><img class="block" id="u371_img" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20670x227.jpg?crc=480356320" alt="" data-muse-src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20670x227.jpg?crc=480356320" data-heightwidthratio="0.34306569343065696" data-image-width="137" data-image-height="47"/></a>
      <!-- /m_editable -->
      <!-- m_editable region-id="editable-static-tag-U434-BP_infinity" template="index.html" data-type="image" data-ice-options="clickable" data-ice-editable="link" -->
      <a class="nonblock nontext anim_swing clip_frame grpelem" id="u434" href="index.html#contacts" data-href="anchor:U82:U850" data-muse-uid="U434" data-muse-type="img_frame"><!-- image --><img class="block" id="u434_img" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20670x2272.jpg?crc=3857605817" alt="" data-muse-src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20670x2272.jpg?crc=3857605817" data-heightwidthratio="0.3382352941176471" data-image-width="136" data-image-height="46"/></a>
      <!-- /m_editable -->
      <a class="anchor_item grpelem" id="up" data-sizePolicy="fixed" data-pintopage="page_fluidx"></a>
      <!-- m_editable region-id="editable-static-tag-U385-BP_infinity" template="index.html" data-type="image" data-ice-options="clickable" data-ice-editable="link" -->
-     <a class="nonblock nontext anim_swing clip_frame grpelem" id="u385" href="index.html#projects" data-href="anchor:U82:U555" data-muse-uid="U385" data-muse-type="img_frame"><!-- image --><img class="block" id="u385_img" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20670x2273.jpg?crc=4192162273" alt="" data-muse-src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20670x2273.jpg?crc=4192162273" data-heightwidthratio="0.3357664233576642" data-image-width="137" data-image-height="46"/></a>
+     <a class="nonblock nontext anim_swing clip_frame grpelem" id="u385" href="index.html#projects" data-href="anchor:U82:U555" data-muse-uid="U385" data-muse-type="img_frame"><!-- image --><img class="block" id="u385_img" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20670x2273.jpg?crc=4192162273" alt="" data-muse-src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20670x2273.jpg?crc=4192162273" data-heightwidthratio="0.34306569343065696" data-image-width="137" data-image-height="47"/></a>
      <!-- /m_editable -->
      <!-- m_editable region-id="editable-static-tag-U420-BP_infinity" template="index.html" data-type="image" data-ice-options="clickable" data-ice-editable="link" -->
      <a class="nonblock nontext anim_swing clip_frame grpelem" id="u420" href="index.html#education" data-href="anchor:U82:U853" data-muse-uid="U420" data-muse-type="img_frame"><!-- image --><img class="block" id="u420_img" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20670x2274.jpg?crc=4148027940" alt="" data-muse-src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20670x2274.jpg?crc=4148027940" data-heightwidthratio="0.3381294964028777" data-image-width="139" data-image-height="47"/></a>
      <!-- /m_editable -->
      <!-- m_editable region-id="editable-static-tag-U110-BP_infinity" template="index.html" data-type="image" -->
      <div class="clip_frame grpelem" id="u110" data-muse-uid="U110" data-muse-type="img_frame"><!-- image -->
-      <img class="block" id="u110_img" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%201114x355.jpg?crc=4195188110" alt="" data-muse-src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%201114x355.jpg?crc=4195188110" data-heightwidthratio="0.31797235023041476" data-image-width="217" data-image-height="69"/>
+      <img class="block" id="u110_img" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%201114x355218x70.jpg?crc=343621334" alt="" data-muse-src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%201114x355218x70.jpg?crc=343621334" data-heightwidthratio="0.3165137614678899" data-image-width="218" data-image-height="69"/>
      </div>
      <!-- /m_editable -->
     </div>
@@ -80,7 +84,9 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
        
      </div>
     </div>
-    <div class="colelem" id="u477" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- simple frame --></div>
+    <div class="browser_width colelem" id="u477-bw">
+     <div id="u477"><!-- simple frame --></div>
+    </div>
     <a class="anchor_item colelem" id="skills" data-sizePolicy="fixed" data-pintopage="page_fluidx"></a>
     <!-- m_editable region-id="editable-static-tag-U498-BP_infinity" template="index.html" data-type="image" -->
     <div class="clip_frame colelem" id="u498" data-muse-uid="U498" data-muse-type="img_frame"><!-- image -->
@@ -90,27 +96,29 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
     <div class="clearfix colelem" id="pu517"><!-- group -->
      <!-- m_editable region-id="editable-static-tag-U517-BP_infinity" template="index.html" data-type="image" -->
      <div class="clip_frame grpelem" id="u517" data-muse-uid="U517" data-muse-type="img_frame"><!-- image -->
-      <img class="block" id="u517_img" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20706x820.jpg?crc=4179619128" alt="" data-muse-src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20706x820.jpg?crc=4179619128" data-heightwidthratio="1.1609977324263039" data-image-width="441" data-image-height="512"/>
+      <img class="block" id="u517_img" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20706x820442x514.jpg?crc=3764132287" alt="" data-muse-src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20706x820442x514.jpg?crc=3764132287" data-heightwidthratio="1.160633484162896" data-image-width="442" data-image-height="513"/>
      </div>
      <!-- /m_editable -->
      <!-- m_editable region-id="editable-static-tag-U543-BP_infinity" template="index.html" data-type="image" -->
      <div class="clip_frame grpelem" id="u543" data-muse-uid="U543" data-muse-type="img_frame"><!-- image -->
-      <img class="block" id="u543_img" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20706x8202.jpg?crc=464993474" alt="" data-muse-src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20706x8202.jpg?crc=464993474" data-heightwidthratio="1.1609977324263039" data-image-width="441" data-image-height="512"/>
+      <img class="block" id="u543_img" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20706x820442x5142.jpg?crc=4124693897" alt="" data-muse-src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20706x820442x5142.jpg?crc=4124693897" data-heightwidthratio="1.160633484162896" data-image-width="442" data-image-height="513"/>
      </div>
      <!-- /m_editable -->
     </div>
-    <div class="colelem" id="u489" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- simple frame --></div>
+    <div class="browser_width colelem" id="u489-bw">
+     <div id="u489"><!-- simple frame --></div>
+    </div>
     <a class="anchor_item colelem" id="projects" data-sizePolicy="fixed" data-pintopage="page_fluidx"></a>
     <!-- m_editable region-id="editable-static-tag-U564-BP_infinity" template="index.html" data-type="image" -->
     <div class="clip_frame colelem" id="u564" data-muse-uid="U564" data-muse-type="img_frame"><!-- image -->
-     <img class="block" id="u564_img" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20670x2276.jpg?crc=4192162273" alt="" data-muse-src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20670x2276.jpg?crc=4192162273" data-heightwidthratio="0.33587786259541985" data-image-width="131" data-image-height="44"/>
+     <img class="block" id="u564_img" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20670x2276.jpg?crc=4192162273" alt="" data-muse-src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20670x2276.jpg?crc=4192162273" data-heightwidthratio="0.3435114503816794" data-image-width="131" data-image-height="45"/>
     </div>
     <!-- /m_editable -->
     <div class="clearfix colelem" id="ppu655"><!-- group -->
      <div class="clearfix grpelem" id="pu655"><!-- group -->
       <!-- m_editable region-id="editable-static-tag-U655-BP_infinity" template="index.html" data-type="image" -->
       <div class="clip_frame grpelem" id="u655" data-muse-uid="U655" data-muse-type="img_frame"><!-- image -->
-       <img class="block" id="u655_img" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20440x367.jpg?crc=178423310" alt="" data-muse-src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20440x367.jpg?crc=178423310" data-heightwidthratio="0.8328173374613003" data-image-width="323" data-image-height="269"/>
+       <img class="block" id="u655_img" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20440x367324x270.jpg?crc=322858108" alt="" data-muse-src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20440x367324x270.jpg?crc=322858108" data-heightwidthratio="0.8359133126934984" data-image-width="323" data-image-height="270"/>
       </div>
       <!-- /m_editable -->
       <!-- m_editable region-id="editable-static-tag-U691-BP_infinity" template="index.html" data-type="image" data-ice-options="clickable" data-ice-editable="link" -->
@@ -119,7 +127,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
      </div>
      <!-- m_editable region-id="editable-static-tag-U628-BP_infinity" template="index.html" data-type="image" -->
      <div class="clip_frame grpelem" id="u628" data-muse-uid="U628" data-muse-type="img_frame"><!-- image -->
-      <img class="block" id="u628_img" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20440x3672.jpg?crc=4177952768" alt="" data-muse-src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20440x3672.jpg?crc=4177952768" data-heightwidthratio="0.8354037267080745" data-image-width="322" data-image-height="269"/>
+      <img class="block" id="u628_img" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20440x367323x270.jpg?crc=3906592669" alt="" data-muse-src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20440x367323x270.jpg?crc=3906592669" data-heightwidthratio="0.8328173374613003" data-image-width="323" data-image-height="269"/>
      </div>
      <!-- /m_editable -->
      <!-- m_editable region-id="editable-static-tag-U594-BP_infinity" template="index.html" data-type="image" data-ice-options="clickable" data-ice-editable="link" -->
@@ -127,7 +135,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
      <!-- /m_editable -->
      <!-- m_editable region-id="editable-static-tag-U673-BP_infinity" template="index.html" data-type="image" -->
      <div class="clip_frame grpelem" id="u673" data-muse-uid="U673" data-muse-type="img_frame"><!-- image -->
-      <img class="block" id="u673_img" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20440x3673.jpg?crc=3776092236" alt="" data-muse-src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20440x3673.jpg?crc=3776092236" data-heightwidthratio="0.8328173374613003" data-image-width="323" data-image-height="269"/>
+      <img class="block" id="u673_img" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20440x367324x2702.jpg?crc=4180200846" alt="" data-muse-src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20440x367324x2702.jpg?crc=4180200846" data-heightwidthratio="0.8359133126934984" data-image-width="323" data-image-height="270"/>
      </div>
      <!-- /m_editable -->
      <!-- m_editable region-id="editable-static-tag-U698-BP_infinity" template="index.html" data-type="image" data-ice-options="clickable" data-ice-editable="link" -->
@@ -138,7 +146,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
      <div class="clearfix grpelem" id="pu664"><!-- group -->
       <!-- m_editable region-id="editable-static-tag-U664-BP_infinity" template="index.html" data-type="image" -->
       <div class="clip_frame grpelem" id="u664" data-muse-uid="U664" data-muse-type="img_frame"><!-- image -->
-       <img class="block" id="u664_img" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20440x3674.jpg?crc=529222833" alt="" data-muse-src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20440x3674.jpg?crc=529222833" data-heightwidthratio="0.8328173374613003" data-image-width="323" data-image-height="269"/>
+       <img class="block" id="u664_img" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20440x367324x2703.jpg?crc=4225347284" alt="" data-muse-src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20440x367324x2703.jpg?crc=4225347284" data-heightwidthratio="0.8359133126934984" data-image-width="323" data-image-height="270"/>
       </div>
       <!-- /m_editable -->
       <!-- m_editable region-id="editable-static-tag-U705-BP_infinity" template="index.html" data-type="image" data-ice-options="clickable" data-ice-editable="link" -->
@@ -147,12 +155,12 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
      </div>
      <!-- m_editable region-id="editable-static-tag-U646-BP_infinity" template="index.html" data-type="image" -->
      <div class="clip_frame grpelem" id="u646" data-muse-uid="U646" data-muse-type="img_frame"><!-- image -->
-      <img class="block" id="u646_img" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20440x3675.jpg?crc=215287967" alt="" data-muse-src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20440x3675.jpg?crc=215287967" data-heightwidthratio="0.8354037267080745" data-image-width="322" data-image-height="269"/>
+      <img class="block" id="u646_img" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20440x367323x2702.jpg?crc=105617464" alt="" data-muse-src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20440x367323x2702.jpg?crc=105617464" data-heightwidthratio="0.8328173374613003" data-image-width="323" data-image-height="269"/>
      </div>
      <!-- /m_editable -->
      <!-- m_editable region-id="editable-static-tag-U682-BP_infinity" template="index.html" data-type="image" -->
      <div class="clip_frame grpelem" id="u682" data-muse-uid="U682" data-muse-type="img_frame"><!-- image -->
-      <img class="block" id="u682_img" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20440x3676.jpg?crc=338304941" alt="" data-muse-src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20440x3676.jpg?crc=338304941" data-heightwidthratio="0.8354037267080745" data-image-width="322" data-image-height="269"/>
+      <img class="block" id="u682_img" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20440x367323x2703.jpg?crc=390815716" alt="" data-muse-src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20440x367323x2703.jpg?crc=390815716" data-heightwidthratio="0.8328173374613003" data-image-width="323" data-image-height="269"/>
      </div>
      <!-- /m_editable -->
      <!-- m_editable region-id="editable-static-tag-U712-BP_infinity" template="index.html" data-type="image" data-ice-options="clickable" data-ice-editable="link" -->
@@ -162,7 +170,9 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
      <a class="nonblock nontext clip_frame grpelem" id="u719" href="https://github.com/Jazis/MD5_decoder" data-muse-uid="U719" data-muse-type="img_frame"><!-- image --><img class="block" id="u719_img" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20268x85.jpg?crc=4244928464" alt="" data-muse-src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20268x85.jpg?crc=4244928464" data-heightwidthratio="0.3176470588235294" data-image-width="85" data-image-height="27"/></a>
      <!-- /m_editable -->
     </div>
-    <div class="colelem" id="u552" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- simple frame --></div>
+    <div class="browser_width colelem" id="u552-bw">
+     <div id="u552"><!-- simple frame --></div>
+    </div>
     <a class="anchor_item colelem" id="education" data-sizePolicy="fixed" data-pintopage="page_fluidx"></a>
     <!-- m_editable region-id="editable-static-tag-U762-BP_infinity" template="index.html" data-type="image" -->
     <div class="clip_frame colelem" id="u762" data-muse-uid="U762" data-muse-type="img_frame"><!-- image -->
@@ -172,14 +182,16 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
     <div class="clearfix colelem" id="pu732"><!-- group -->
      <!-- m_editable region-id="editable-static-tag-U732-BP_infinity" template="index.html" data-type="image" -->
      <div class="clip_frame grpelem" id="u732" data-muse-uid="U732" data-muse-type="img_frame"><!-- image -->
-      <img class="block" id="u732_img" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%201418x295.jpg?crc=4163255845" alt="" data-muse-src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%201418x295.jpg?crc=4163255845" data-heightwidthratio="0.20837390457643623" data-image-width="1027" data-image-height="214"/>
+      <img class="block" id="u732_img" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%201418x295.jpg?crc=430281014" alt="" data-muse-src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%201418x295.jpg?crc=430281014" data-heightwidthratio="0.20796890184645286" data-image-width="1029" data-image-height="214"/>
      </div>
      <!-- /m_editable -->
      <!-- m_editable region-id="editable-static-tag-U749-BP_infinity" template="index.html" data-type="image" data-ice-options="clickable" data-ice-editable="link" -->
      <a class="nonblock nontext clip_frame grpelem" id="u749" href="http://www.fa.ru/org/spo/kip/Pages/Home.aspx" data-muse-uid="U749" data-muse-type="img_frame"><!-- image --><img class="block" id="u749_img" src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20151x96.jpg?crc=306765951" alt="" data-muse-src="images/%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5%20%d0%b8%d0%b7%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20151x96.jpg?crc=306765951" data-heightwidthratio="0.64" data-image-width="75" data-image-height="48"/></a>
      <!-- /m_editable -->
     </div>
-    <div class="colelem" id="u726" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- simple frame --></div>
+    <div class="browser_width colelem" id="u726-bw">
+     <div id="u726"><!-- simple frame --></div>
+    </div>
     <a class="anchor_item colelem" id="contacts" data-sizePolicy="fixed" data-pintopage="page_fluidx"></a>
     <!-- m_editable region-id="editable-static-tag-U781-BP_infinity" template="index.html" data-type="image" -->
     <div class="clip_frame colelem" id="u781" data-muse-uid="U781" data-muse-type="img_frame"><!-- image -->
@@ -201,7 +213,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
      <!-- /m_editable -->
     </div>
    </div>
-   <div class="verticalspacer" data-offset-top="4581" data-content-above-spacer="4580" data-content-below-spacer="62" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+   <div class="verticalspacer" data-offset-top="4551" data-content-above-spacer="4550" data-content-below-spacer="62" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
    <div class="browser_width grpelem" id="u1345-bw">
     <div id="u1345"><!-- group -->
      <div class="clearfix" id="u1345_align_to_page">
