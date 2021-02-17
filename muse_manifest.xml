@@ -1,10 +1,10 @@
-<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="https://jazis.github.io/main" resolutions="1x" timestamp="1613566089390">
+<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="https://jazis.github.io/main" resolutions="1x" timestamp="1613566770477">
   <folder name="phone">
     <folder name="css">
-      <file name="index.css" crc="47110479" ref="phone>index"/>
-      <file name="nomq_index.css" crc="38807808" ref="phone>index"/>
+      <file name="index.css" crc="232271141" ref="phone>index"/>
+      <file name="nomq_index.css" crc="194081875" ref="phone>index"/>
     </folder>
-    <file name="index.html" crc="4091193014" seo="true" mt="1613566068614" redirect="true"/>
+    <file name="index.html" crc="4153019411" seo="true" mt="1613566758046" redirect="true"/>
   </folder>
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
