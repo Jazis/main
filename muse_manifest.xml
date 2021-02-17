@@ -1,10 +1,10 @@
-<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="https://jazis.github.io/main" resolutions="1x" timestamp="1613567126036">
+<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="https://jazis.github.io/main" resolutions="1x" timestamp="1613567431535">
   <folder name="phone">
     <folder name="css">
-      <file name="index.css" crc="299487402" ref="phone>index"/>
+      <file name="index.css" crc="310598359" ref="phone>index"/>
       <file name="nomq_index.css" crc="4086750544" ref="phone>index"/>
     </folder>
-    <file name="index.html" crc="4065734565" seo="true" mt="1613567094301" redirect="true"/>
+    <file name="index.html" crc="4023384156" seo="true" mt="1613567414483" redirect="true"/>
   </folder>
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
@@ -15,13 +15,13 @@
     <file name="museutils.js" crc="3939489907" ref="index:phone>index"/>
     <file name="whatinput.js" crc="86476730" ref="index:phone>index"/>
     <file name="museconfig.js" crc="3936894949" ref="index:phone>index"/>
-    <file name="jquery.musepolyfill.bgsize.js" crc="85124417" ref="index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="85124417" ref="index:phone>index"/>
     <file name="jquery.watch.js" crc="522499760" ref="index:phone>index"/>
     <file name="require.js" crc="4177726516" ref="index:phone>index"/>
     <file name="jquery.museresponsive.js" crc="95814420" ref="phone>index"/>
   </folder>
   <folder name="images">
-    <file name="ee5eeef76f90f10325a12d1597e49aba.jpg" crc="3900983565" ref="index">
+    <file name="ee5eeef76f90f10325a12d1597e49aba.jpg" crc="3900983565" ref="index:phone>index">
       <caption webpage="index" alt=""/>
     </file>
     <file name="вставленное изображение 670x227.jpg" crc="4192162273" seo="true" ref="index:phone>index">
